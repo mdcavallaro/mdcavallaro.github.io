@@ -1,0 +1,41 @@
+ul.NavBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.NavBar li {
+    float: right;
+}
+
+ul.NavBar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.NavBar li a:hover {
+    color: rgba(146, 220, 229, 1);
+}
+
+li.Name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+body {
+    /* the image used */
+    background-image: url("photos/background_home1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
