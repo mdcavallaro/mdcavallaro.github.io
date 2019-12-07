@@ -1,3 +1,4 @@
+
 ul.NavBar {
     list-style-type: none;
     margin: 0;
@@ -11,9 +12,10 @@ ul.NavBar li {
 
 ul.NavBar li a {
     display: block;
-    color: black;
+    color: whitesmoke;
     text-align: center;
-    padding: 14px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 16px;
     text-decoration: none;
 }
 
@@ -23,19 +25,33 @@ ul.NavBar li a:hover {
 
 li.Name {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 32px;
+    color:grey;
+
 }
 
-body {
-    /* the image used */
-    background-image: url("photos/background_home1.jpg");
+/* Portfolio Page */
 
-    /* Full height */
-    height: 100%;
+ul.NavBarPortfolio {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+ul.NavBarPortfolio li {
+    float: right;
+}
+
+ul.NavBarPortfolio li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+
+ul.NavBarPortfolio li a:hover {
+    color: black;
 }
