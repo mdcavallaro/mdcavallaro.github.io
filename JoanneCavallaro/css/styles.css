@@ -55,3 +55,26 @@ ul.NavBarPortfolio li a {
 ul.NavBarPortfolio li a:hover {
     color: black;
 }
+
+div.gallery {
+    margin: 1px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 360px;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* gallery variations */
+div.galleryLeft {
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
