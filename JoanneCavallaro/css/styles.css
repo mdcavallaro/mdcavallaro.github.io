@@ -32,6 +32,7 @@ li.Name {
 
 /* Portfolio Page */
 
+/* NavBar for Portfolio Page */
 ul.NavBarPortfolio {
     list-style-type: none;
     margin: 0;
@@ -56,11 +57,13 @@ ul.NavBarPortfolio li a:hover {
     color: black;
 }
 
+/* Photo Gallery on Portfolio */
 div.gallery {
     margin: 1px;
     border: 1px solid #ccc;
     float: left;
-    width: 360px;
+    width: 300px;
+    height: 200px;
 }
   
 div.gallery:hover {
