@@ -31,6 +31,9 @@ li.Name {
 }
 
 /* Portfolio Page */
+body {
+    background-color: beige;
+}
 
 /* NavBar for Portfolio Page */
 ul.NavBarPortfolio {
@@ -38,6 +41,7 @@ ul.NavBarPortfolio {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: static;
 }
 
 ul.NavBarPortfolio li {
@@ -88,6 +92,10 @@ div.galleryLeft {
 
 
 /* Responsive Image Grid */
+* {
+    box-sizing: border-box;
+}
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
