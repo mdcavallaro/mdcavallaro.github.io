@@ -4,6 +4,7 @@ ul.NavBar {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 ul.NavBar li {
@@ -12,7 +13,7 @@ ul.NavBar li {
 
 ul.NavBar li a {
     display: block;
-    color: whitesmoke;
+    color: rgba(251, 254, 249, 1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px 16px;
@@ -20,19 +21,19 @@ ul.NavBar li a {
 }
 
 ul.NavBar li a:hover {
-    color: rgba(146, 220, 229, 1);
+    color: rgba(47, 69, 80, 1);
 }
 
 li.Name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    color:grey;
+    color:rgba(251, 254, 249, 1);
 
 }
 
 /* Portfolio Page */
 body {
-    background-color: beige;
+    background-color: #191923;
 }
 
 /* NavBar for Portfolio Page */
@@ -50,7 +51,7 @@ ul.NavBarPortfolio li {
 
 ul.NavBarPortfolio li a {
     display: block;
-    color: grey;
+    color: rgba(251, 254, 249, 1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px 16px;
@@ -58,7 +59,7 @@ ul.NavBarPortfolio li a {
 }
 
 ul.NavBarPortfolio li a:hover {
-    color: black;
+    color: rgba(47, 69, 80, 1)
 }
 
 /* Photo Gallery on Portfolio */
@@ -116,6 +117,11 @@ div.galleryLeft {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    transition: 0.3s;
+}
+
+.column img:hover {
+    opacity: 0.7;
 }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -134,4 +140,56 @@ div.galleryLeft {
       flex: 100%;
       max-width: 100%;
     }
+}
+
+
+/* About Page */
+
+
+.BioImage img {
+    width: 45%;
+    height: auto;
+    float: left;
+    padding-left: 25px;
+}
+
+.BioImage h2 {
+    color: rgba(251, 254, 249, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: right;
+    width: 50%;
+}
+
+.BioImage p {
+    color: rgba(251, 254, 249, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 50%;
+    padding-right: 25px;
+    float: right;
+}
+
+/* Portfolio Pages */
+.MainPhoto img {
+    width: 45%;
+    height: auto;
+    float: left;
+    padding-left: 25px;
+}
+
+.MainPhoto h2 {
+    color: rgba(251, 254, 249, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: right;
+    width: 50%;
+}
+
+.MainPhoto p {
+    color: rgba(251, 254, 249, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: right;
+    width: 50%;
 }
