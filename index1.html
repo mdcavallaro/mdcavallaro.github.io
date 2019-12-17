@@ -21,33 +21,88 @@
             <p>Graphic Design - Software Development - QA Testing</p>
             
         </div>
-
         <div class="about">
             <img src="assets1/photos/About_photo.jpg">
             <h3>About:</h3>
-            <p>I returned to St. Edwards University in 2014 and received a Bachelor's of the Arts in Graphic Design in 2017.
-            I worked as a QA tester on a variety of projects, and coordinated with a number of teams across multiple continents in doing so.</p>
-            <h3>Technical Skills:</h3>
-            <h4>Computer Science</h4>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>SQL & Databases</li>
-                    <li>Python</li>
-                  </ul>
-            <h4>Graphic Design</h4>
-                  <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe InDesign</li>
-                  </ul>
-            
+                <p>I received a Bachelor's of Arts in Graphic Design from St. Edwards University in 2017.</p>
+                <p>During the time I was in school, I also worked as a QA Specialist at a tech start-up in Austin, Tx. I worked with teams across multiple continents to prepare multiple projects for production.</p>
+                <p>I moved to Oregon to get a job in the Tech Industry. I found a position as a Customer Suport Specialist at a start-up but came to the conclusion that with the combination of my prior skills and experience, the next step to be able to start a fulfilling career somewhere would be to learn about computer programming in order to bring more value to the skills I have already acquired.</p>
+                <p>I am looking forward to finding a position now having completed this course and be able to forward in a career in the tech field in either Oregon or Southern Washington.</p>    
+        </div>
+        <div class="TechnicalSkills">
+            <h3>Technical Skills:</h3>   
+        </div>
+<!-- Image SlideShow-->
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="assets1/photos/github.jpg" style="width:100%">
+          <div class="text">GitHub</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="assets1/photos/HTML.jpg" style="width:100%">
+          <div class="text">HTML</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="assets1/photos/CSS3.png" style="width:100%">
+          <div class="text">CSS</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="assets1/photos/JavaScript.jpg" style="width:100%">
+            <div class="text">CSS</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="assets1/photos/VisualStudio.png" style="width:100%">
+            <div class="text">CSS</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        
+<!--  Text Related to Slideshow -->
+        <div class="CS_Copy">
+            <h3>Computer Science</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL & Databases</li>
+                <li>Python</li>
+            </ul> 
+        </div>
+<!-- images -->
+        <div class="CS_Visual">
+            <img src="assets1/photos/github.jpg" width="300px" height="200px">
+            <img src="assets1/photos/1200px-HTML5_logo_and_wordmark.svg.png">
+            <img src="assets1/photos/CSS3.png">
+            <img src="assets1/photos/JavaScript.jpg">
+            <img src="assets1/photos/VisualStudio.png">    
         </div>
     
         <div class="QA_Testing">
-            <h4>Quality Assurance Testing</h4>
+            <h3>QA Testing</h3>
             <ul>
-              <li>4 years of experience</li>
+              <li>4 years of experience working at a start-up that focused on integrating gaming and exercise.</li>
               <li>iOS, Android, and Windows testing.</li>
               <li>Experience using the task management software JIRA</li>
               <li>Testing multiple versions of operating systems for iOS, Android, and Windows.</li>
@@ -57,6 +112,51 @@
             </ul>
         </div>
 
-    </body>
+        <div class="GraphicDesign">
+            <h3>Graphic Design</h3>
+                  <ul>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe InDesign</li>
+                  </ul>
+        </div>
 
+        <!--  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL & Databases</li>
+                    <li>Python</li>
+                </ul> -->
+    
+
+    </body>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </html>
