@@ -1,3 +1,46 @@
+/* Dropdown Button top of page */
+.dropbtn {
+  background-color: rgba(30, 85, 92, 1);
+  color: whitesmoke;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* top of portfolio */
 .header {
     color: rgba(247, 237, 226, 1);
     background-color: rgba(58, 46, 57, 1);
@@ -5,7 +48,6 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 75px 0px 30px;
 }
-
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +64,7 @@ ul {
 .about {
     text-align: left;
     float: left;
-    background-color: rgba(244, 216, 205, 1);;
+    background-color: rgba(244, 216, 205, 1);
     padding: 50px 60px;
 }
 
@@ -142,6 +184,7 @@ img {vertical-align: middle;}
   max-width: 100%;
   position: relative;
   margin: auto;
+  align-content: center;
 }
 
 .SS_Background {
@@ -258,7 +301,23 @@ img {vertical-align: middle;}
 
 /* Graphic Design */
 .GraphicDesign {
-    background-color: rgba(58, 46, 57, 1);
-    color: rgba(247, 237, 226, 1);
     width: 100%;
+    float: left;
+    background-color: rgba(244, 216, 205, 1);
+}
+
+.GraphicDesign h3 {
+  padding: 25px 60px;
+}
+
+.GraphicDesign ul {
+  padding: 0px 60px 25px 90px;
+}
+
+.GraphicDesign ul li {
+  padding-bottom: 35px;
+}
+
+.GraphicDesign img {
+  float: right;
 }
