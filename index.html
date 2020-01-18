@@ -26,7 +26,7 @@
         <div class="dropdown" style="float:right;">
           <button class="dropbtn">More Info</button>
           <div class="dropdown-content">
-            <a href="assets1/resume_michael_2020_wordformat.pdf" target="_blank">Resume</a>
+            <a href="assets1/MDC_resume_2020.pdf" target="_blank">Resume</a>
             <a href="https://www.linkedin.com/in/michael-cavallaro-5a3940130/" target="_blank">LinkedIn</a>
             <a href="https://github.com/mdcavallaro" target="_blank">GitHub</a>
           </div>
@@ -41,19 +41,18 @@
         </div>
         <div class="about">
             <img src="assets1/photos/headshot_3.jpg">
-            <h3>About:</h3>
-                <p>I received a Bachelor's of Arts in Graphic Design from St. Edwards University in 2017.</p>
-                <p>During the time I was in school, I also worked as a QA Specialist at a tech start-up in Austin, Tx. I worked with teams across multiple continents to prepare multiple projects for production.</p>
-                <p>I moved to Oregon to get a job in the Tech Industry. I found a position as a Customer Suport Specialist at a start-up but came to the conclusion that with the combination of my prior skills and experience, the next step to be able to start a fulfilling career somewhere would be to learn about computer programming in order to bring more value to the skills I have already acquired.</p>
-                <p>I am looking forward to finding a position now having completed this course and be able to forward in a career in the tech field in either Oregon or Southern Washington.</p>    
+            <h4>About:</h4>
+                <p>I received a Bachelor's of Arts in Graphic Design from St. Edwards University in 2017.
+                  <br><br>
+                During the time I was in school, I also worked as a QA Specialist at a tech start-up in Austin, Tx. I worked with teams across multiple continents to prepare multiple projects for production.
+                  <br><br>
+                I moved to Oregon to get a job in the Tech Industry. I found a position as a Customer Suport Specialist at a start-up but came to the conclusion that with the combination of my prior skills and experience, the next step to be able to start a fulfilling career somewhere would be to learn about computer programming in order to bring more value to the skills I have already acquired.
+                  <br><br>
+                I am looking forward to continuing a career in the tech field in either Oregon or southern Washington.</p>    
         </div>
-        <div class="TechnicalSkills">
-            <h3>Technical Skills:</h3>   
-        </div>
-        <div class="centered">
- 
-          <section class="cards">
-               
+          
+        <h4 id="TS">Technical Skills:</h4>   
+          <section class="cards"> 
               <article class="card">
                  <img src="assets1/photos/DiscGolfSite.JPG" alt="Disc Golf Site" style="max-width: 100%; height: auto;">
                  <a href="DiscGolfToday/index.html" target="_blank"><h4>Disc Golf Website</h4></a>
@@ -77,9 +76,8 @@
                   <a href="cinemaUpdatedForJS/Bootstrap_Demo_Assignment.html" target="_blank"><h4>Bootstrap Example</h4></a>
                   <p>This is an example of a small website that was created using Bootstrap for a school project.</p>
               </article><!-- /card-four -->
-
           </section>
-        </div>
+        
 <!--  Text Related to Slideshow -->
       
         <div class="CS_Copy">
@@ -98,21 +96,15 @@
           <div class="SS_Background">
 
           <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="assets1/photos/github_illustration.JPG">
-            <div class="text">GitHub</div>
+            <img src="assets1/photos/github_illustration.JPG" style="width: 100%;">
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="assets1/photos/html_illustration.JPG">
-            <div class="text">HTML</div>
+            <img src="assets1/photos/html_illustration.JPG" style="width: 100%;">
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="assets1/photos/css_illustration.JPG">
-            <div class="text">CSS</div>
+            <img src="assets1/photos/css_illustration.JPG" style="width: 100%;">
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -128,17 +120,6 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
       
- 
- <!-- images -->
- <!-- 
-        <div class="CS_Visual">
-            <img src="assets1/photos/github.jpg" width="300px" height="200px">
-            <img src="assets1/photos/1200px-HTML5_logo_and_wordmark.svg.png">
-            <img src="assets1/photos/CSS3.png">
-            <img src="assets1/photos/JavaScript.jpg">
-            <img src="assets1/photos/VisualStudio.png">    
-        </div>
-      -->
         <div class="QA_Testing">
             <h3>QA Testing</h3>
             <ul>
@@ -152,10 +133,10 @@
               <li>Keeping the office organized and clean</li>
             </ul>
         </div>
-
+        
         <div class="GraphicDesign">
           <a href="https://www.michaeldcavallaro.com"><img src="assets1/photos/DesignPortfolio.png" alt="Graphic Design Portfolio" style="max-width: 45%; height: auto;"></a>
-            <a href="https://www.michaeldcavallaro.com"><h3>Graphic Design</h3></a>
+          <a href="https://www.michaeldcavallaro.com"><h3>Graphic Design</h3></a>
                   <ul>
                     <li>Adobe Creative Suite</li>
                     <li>Procreate</li>
@@ -164,10 +145,21 @@
                     <li>Internship at makeATX, a laser engraving studion in Austin, Texas.</li>
                     <li>Worked on the UI layout for a desktop application being developed at Blue Goji.</li>
                     <li>Created concept art for games in development.</li>
-
                   </ul>
         </div>
-    
+  
+        <h4 id=Contact>Contact Me</h4>
+        
+        <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/xlejwbar" method="post">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="10" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          <input id="Submit" type="submit" value="Submit">
+        </form>
 
     </body>
     
