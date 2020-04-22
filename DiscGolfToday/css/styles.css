@@ -89,6 +89,13 @@ the dropdown content is shown */
     padding: 5px;
 }
 
+#welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgba(43, 48, 58, 1);
+    padding-top: 100px;
+}
+
 .center h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
